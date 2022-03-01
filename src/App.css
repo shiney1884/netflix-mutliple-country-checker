@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.842);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filters {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border: .2rem solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drop-down-filter {
+    width: 15%;
+    padding: 10px;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.longer {
+    width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+.date-input {
+    width: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shows {
+    /* border: .2px solid red; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.show {
+    /* border: 2px solid blue; */
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 310px;
+}
+
+.rating {
+    background-color: rgb(47, 255, 151);
+    width: 40px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.bg-img {
+    border-radius: 20px;
+    width: 180px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.show-type {
+    background-color: rgb(229, 255, 0);
+    width: 40px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
 }
